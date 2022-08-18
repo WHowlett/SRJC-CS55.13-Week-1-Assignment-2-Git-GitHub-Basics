@@ -12,7 +12,7 @@ let myserver = myhttp.createServer(
       mytext = "um Hi? Do I know you?";
     };
 
-
+    mytext = mytext + " ------ Still cool right?";
     myresponse.writeHead( 200, {"Content": "text/plain"});
 
     myresponse.end( mytext + "\n");
